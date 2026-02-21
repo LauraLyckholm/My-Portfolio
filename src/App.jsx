@@ -56,7 +56,7 @@ export const App = () => {
       <FeaturedProjects />
 
       {/* Articles Section */}
-      <Articles id="articles-link" />
+      {/* <Articles id="articles-link" /> */}
 
       {/* Skills Section */}
       <Skills />

@@ -1,4 +1,5 @@
 import "./projects.css";
+import projects from "./projects.json";
 import { useEffect, useState } from "react";
 import { MainHeading } from "../../ReusableComponents/Typography/MainHeading";
 import { ProjectCard } from "./ProjectCard";
@@ -39,6 +40,15 @@ export const FeaturedProjects = () => {
         fetchProjects();
     }, []);
 
+    // Add projects not hosted on GitHub
+    const projectDataNotInGithub = projects;
+
+    // Combine GitHub projects with non-GitHub projects
+    const allProjects = [
+        ...projectDataNotInGithub,
+        ...projectData,
+    ];
+
     return (
         <section className="projects-section">
             {/* Shows mainheading, and then IF something goes wrong, it displays an error message, otherwise the cards are shown. */}
@@ -46,7 +56,7 @@ export const FeaturedProjects = () => {
             {error ? (
                 <p className="error-message">An error occurred: {error.message}</p>
             ) : (
-                <ProjectCard repositories={projectData} />
+                <ProjectCard repositories={allProjects} />
             )}
 
         </section>

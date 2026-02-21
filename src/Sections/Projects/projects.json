@@ -1,0 +1,7 @@
+[{
+            "id": "revolutionrace",
+            "name": "RevolutionRace",
+            "description": "An e-commerce website for the outdoor clothing brand RevolutionRace, built using C# and Nuxt/Vue, managed with Litium and Storyblok. As part of a bigger team, I was responsible for the frontend development, implementing new features, and optimizing the user experience and accessibility of the website.",
+            "homepage": "https://revolutionrace.eu",
+            "topics": ["Litium", "Storyblock", "JavaScript/TypeScript", "Vue", "HTML", "CSS"]
+}]

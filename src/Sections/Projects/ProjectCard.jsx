@@ -62,18 +62,20 @@ export const ProjectCard = ({ repositories }) => {
                                 // onMouseEnter={() => setIsDemoButtonHovered({ ...isDemoButtonHovered, [index]: true })}
                                 // onMouseLeave={() => setIsDemoButtonHovered({ ...isDemoButtonHovered, [index]: false })}
                                 />
-                                <Button
-                                    className={"github-btn"}
-                                    btnURL={repo.html_url}
-                                    imgAlt={"Github icon"}
-                                    // iconURL={isGithubButtonHovered[index] ? '/icons/github-white.svg' : '/icons/github-darkgray.svg'}
-                                    iconURL={"/icons/github-darkgray.svg"}
+                                {repo.html_url && (
+                                    <Button
+                                        className={"github-btn"}
+                                        btnURL={repo.html_url}
+                                        imgAlt={"Github icon"}
+                                        // iconURL={isGithubButtonHovered[index] ? '/icons/github-white.svg' : '/icons/github-darkgray.svg'}
+                                        iconURL={"/icons/github-darkgray.svg"}
                                     btnText={"View the code"}
                                 // onTouchStart={() => setIsGithubButtonHovered(index, true)} // Touch start event
                                 // onTouchEnd={() => setIsGithubButtonHovered(index, false)}   // Touch end event
                                 // onMouseEnter={() => setIsGithubButtonHovered({ ...isGithubButtonHovered, [index]: true })}
                                 // onMouseLeave={() => setIsGithubButtonHovered({ ...isGithubButtonHovered, [index]: false })}
                                 />
+                                )}
                             </div>
                         </div>
                     </article>

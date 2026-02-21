@@ -54,5 +54,9 @@
     {
         "repoName": "Villa-Vibes",
         "imageUrl": "/assets/webP/villa-vibes.webp"
+    },
+    {
+        "repoName": "RevolutionRace",
+        "imageUrl": "/assets/webP/revolutionrace.webp"
     }
 ]
