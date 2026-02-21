@@ -9,7 +9,6 @@ import { NormalText } from "../../ReusableComponents/Typography/NormalText";
 
 // Component for each individual project-card. Takes in data as a prop from its parent the FeaturedProjects.jsx where the fetch from Github is made.
 export const ProjectCard = ({ repositories }) => {
-    console.log(repositories);
     // Declaring a variable that uses the images to find the relevant repositories. If the name in the image-json is in the list of repos in the Fetch it will be saved in the filteredRepos. 
     const filteredRepos = repositories
         .filter((repo) => repoImages.find((img) => img.repoName === repo.name))
