@@ -5,18 +5,19 @@ import { MainHeading } from "../../ReusableComponents/Typography/MainHeading";
 import { ProjectCard } from "./ProjectCard";
 
 const token = import.meta.env.GH_TOKEN;
-const API = "https://api.github.com/users/LauraLyckholm/repos";
+const GITHUB = "https://api.github.com/users/LauraLyckholm/repos";
 
 // Component for the featured projects section. Data is fetched here from the Github API and the structure of the section is set up. 
 export const FeaturedProjects = () => {
     // Initializing projectData and error as empty arrays
     const [projectData, setProjectData] = useState([]);
     const [error, setError] = useState(null);
+    const projectsToExclude = ["Avocado-Sales"]
 
     // Function to fetch projects from the GitHub API.
-    const fetchProjects = async () => {
+    const fetchProjectsFromGithub = async () => {
         try {
-            const response = await fetch(API, {
+            const response = await fetch(GITHUB, {
                 headers: {
                     "Authorization": `${token}`,
                 }
@@ -28,7 +29,7 @@ export const FeaturedProjects = () => {
             }
 
             const rawData = await response.json();
-            setProjectData(rawData);
+            setProjectData(rawData.filter(repo => !projectsToExclude.includes(repo.name)));
         } catch (error) {
             setError(error);
             console.error(error); // Log the error to the console
@@ -37,7 +38,7 @@ export const FeaturedProjects = () => {
 
     // Handles the fetch from above
     useEffect(() => {
-        fetchProjects();
+        fetchProjectsFromGithub();
     }, []);
 
     // Add projects not hosted on GitHub
