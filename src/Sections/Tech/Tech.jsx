@@ -4,7 +4,7 @@ import { LargeText } from "../../ReusableComponents/Typography/LargeText.jsx";
 
 // Component for the "Tech"-section.
 export const Tech = () => {
-    const techText = "HTML, CSS, Flexbox, Grids, JavaScript, ES7, JSX, React, React Hooks, Node.js, Npm, Web Accessibility, APIs, mob-programming, pair-programming, GitHub."
+    const techText = "Vue, React, HTML, CSS, Figma, JavaScript, TypeScript, Litium, Storyblok, Node.js, Npm, MongoDB/Atlas, Postman, DevOps, Web Accessibility, Express.js, mob-programming, pair-programming, GitHub, Pinia, Zustand, Asana, Google Sheets, Excel, Adobe Creative Suite, and strong interpersonal skills.";
     return (
         <section className="tech">
             <div className="tech-text-section">

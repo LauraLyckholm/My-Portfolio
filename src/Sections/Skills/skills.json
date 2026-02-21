@@ -2,11 +2,15 @@
     {
         "name": "Code",
         "skillset": [
-            "HTML5",
-            "CSS3",
-            "Javascript ES6",
+            "HTML",
+            "CSS",
+            "Javascript",
+            "Typescript",
+            "Vue",
             "React",
-            "GitHub"
+            "GitHub",
+            "DevOps",
+            "Nuxt.js",
         ]
     },
     {
@@ -21,21 +25,24 @@
             "Postman",
             "Slack",
             "Microsoft",
-            "Emarsys"
+            "Emarsys",
+            "MongoDB/Atlas",
+            "Asana",
+            "Google Sheets",
+            "Excel"
         ]
     },
     {
         "name": "Upcoming",
         "skillset": [
-            "Styled Components",
-            "Node.js",
-            "Vue.js"
+            "C#"
         ]
     },
     {
         "name": "More",
         "skillset": [
-            "Web Design",
+            "Web design",
+            "UX/UI",
             "Agile methodology",
             "Collaborative work"
         ]
