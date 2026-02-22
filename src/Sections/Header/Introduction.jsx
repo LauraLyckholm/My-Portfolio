@@ -3,7 +3,7 @@ import { SubHeading } from "../../ReusableComponents/Typography/SubHeading.jsx";
 import { NormalText } from "../../ReusableComponents/Typography/NormalText.jsx";
 import { ImageComponent } from "../../ReusableComponents/ImageElements/ImageComponent";
 
-const introText = "Laura is a frontend developer with a background in web design, known for her keen eye for details and ability to learn new technologies, languages and programs. She creates applications with both the designer and user in mind, and does so with a constant smile on her face. Her drive for perfection and her background in design makes her a valuable asset to any project and a standout in the technology field.";
+const introText = "Laura, a frontend developer with five years of documented experience in web development and design, brings a proven track record of building for the web, including formal studies in web development, two years as a frontend developer, and nearly three years working professionally in web design. As an engineer with a background in web design, known for her keen eye for detail and ability to quickly learn new technologies, languages, and tools. She creates applications with both the designer and the user in mind, always balancing creativity with usability and performance. Her drive for perfection, combined with her design background, makes her a valuable asset to any project and a standout in the technology field.";
 
 // Component for the introduction section. Structure of the section is set up and all relevant information is injected. I decided to put the introtext in it's own variable for a cleaner code in the component it self.  
 export const Introduction = () => {
